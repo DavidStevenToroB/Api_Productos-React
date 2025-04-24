@@ -1,11 +1,11 @@
 import React from 'react'
 import './Cards.css'
 
-export const Cards = (producto) => {
+export const Cards = (product) => {
+   let rating = '☆☆☆☆☆'
+   const {imagen, title, category, description, rate, price} = product
+   console.log(imagen);
    
-   const {imagen, title, category, description, rate, price} = producto
-   const rating = ''
-
    if(rate >= 0) {
       rating = '☆☆☆☆☆'
    }
@@ -45,7 +45,7 @@ export const Cards = (producto) => {
          <img src={imagen} alt={title} />
          <h2>{title}</h2>
          <h3>{category}</h3>
-         <h4>{description}</h4>
+         {/* <h4 className='description'>{description}</h4> */}
          <h3>{rating}</h3>
          <h2>{price}</h2>
       </div>
