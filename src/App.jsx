@@ -22,7 +22,7 @@ function App() {
   return (
     <>
     <Header products={products}/>
-    <Main products={products}/>
+    {/* <Main products={products}/>} */}
     <Footer />
     </>
   )
