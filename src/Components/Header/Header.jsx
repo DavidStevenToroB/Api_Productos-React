@@ -16,7 +16,7 @@ export const Header = ({products}) => {
       })
       setFilteredProducts(filteredProducts)
       console.log(filteredProducts)
-      Main(filteredProducts)
+      products = filteredProducts
    }
 
    return (
@@ -24,9 +24,9 @@ export const Header = ({products}) => {
       <header className='header'>
          <h1>Productos Catalogo</h1>
          <input type="text" placeholder='buscar...'  id='search'/>
-         <button type='submit' onClick={handleSearch}>Buscar</button>
+         {/* <button type='submit' onClick={handleSearch}>Buscar</button> */}
       </header>
-      {/* <Cards products={filteredProducts}/> */}
+      {/* <Main products={products} /> */}
       </>
    )
 }
