@@ -26,7 +26,7 @@ export const Header = ({products}) => {
          <input type="text" placeholder='buscar...'  id='search'/>
          <button type='submit' onClick={handleSearch}>Buscar</button>
       </header>
-      <Cards products={filteredProducts}/>
+      {/* <Cards products={filteredProducts}/> */}
       </>
    )
 }
